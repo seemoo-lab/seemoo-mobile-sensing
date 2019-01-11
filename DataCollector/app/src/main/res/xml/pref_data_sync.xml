@@ -1,0 +1,86 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <SwitchPreference
+        android:contentDescription="@string/pref_description_remote_switch"
+        android:summary="@string/pref_description_remote_switch"
+        android:title="@string/pref_title_remote_switch"
+        android:key="@string/pref_title_remote_switch"
+        android:checked="true"
+        android:defaultValue="true" />
+    <ListPreference
+        android:entries="@array/values_hz_name"
+        android:entryValues="@array/values_hz"
+        android:defaultValue="100"
+        android:key="@string/accel"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/accel" />
+    <ListPreference
+        android:entries="@array/values_hz_name"
+        android:entryValues="@array/values_hz"
+        android:key="@string/accelUnC"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/accelUnC" />
+    <ListPreference
+        android:entries="@array/values_hz_name"
+        android:entryValues="@array/values_hz"
+        android:key="@string/accelLin"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/accelLin" />
+    <ListPreference
+        android:entries="@array/values_hz_name"
+        android:entryValues="@array/values_hz"
+        android:key="@string/gyr"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/gyr" />
+    <ListPreference
+        android:entries="@array/values_hz_name"
+        android:entryValues="@array/values_hz"
+        android:key="@string/gyrUnC"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/gyrUnC" />
+    <ListPreference
+        android:entries="@array/values_hz_name"
+        android:entryValues="@array/values_hz"
+        android:key="@string/mag"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/mag" />
+    <ListPreference
+        android:entries="@array/values_hz_name"
+        android:entryValues="@array/values_hz"
+        android:key="@string/magUn"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/magUn" />
+    <ListPreference
+        android:entries="@array/values_hz_name"
+        android:entryValues="@array/values_hz"
+        android:key="@string/grav"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/grav" />
+    <ListPreference
+        android:entries="@array/values_hz_name"
+        android:entryValues="@array/values_hz"
+        android:key="@string/lux"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/lux" />
+    <ListPreference
+        android:entries="@array/values_hz_name"
+        android:entryValues="@array/values_hz"
+        android:key="@string/bar"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/bar" />
+
+    <!--android:defaultValue="100" -->
+</PreferenceScreen>
