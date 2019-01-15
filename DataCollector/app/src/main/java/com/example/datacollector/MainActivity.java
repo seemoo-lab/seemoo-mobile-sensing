@@ -494,6 +494,13 @@ public class MainActivity extends AppCompatActivity {
     public String parentPath;
 
 
+    /**
+     * BLE WIFI and Audio Recorder
+     */
+    public com.example.datacollector.BluetoothScanner bluetoothScanner;
+    public com.example.datacollector.WifiScanner wifiScanner;
+    public com.example.datacollector.MyAudioRecorder myAudioRecorder;
+
 
 
     /**
@@ -560,10 +567,16 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.toggleButton);
         button.setEnabled(false);
 
+
+
+        // set up ble wifi and audio
+        bluetoothScanner = new BluetoothScanner(this);
+        wifiScanner = new WifiScanner(this);
+        myAudioRecorder = new MyAudioRecorder(this);
+
         //Set the current saved status to the remoteswitch
         updatePreferences();
         setRemoteSwitch(remoteSwitch);
-
 
         //Spinner to select device number
         spinner = findViewById(R.id.selectionItem);
@@ -586,7 +599,7 @@ public class MainActivity extends AppCompatActivity {
 
         textView = findViewById(R.id.textView);
 
-        requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WAKE_LOCK/**,Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION,Manifest.permission.RECORD_AUDIO**/},requestCode);
+        requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WAKE_LOCK,Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION,Manifest.permission.RECORD_AUDIO},requestCode);
 
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         List<Sensor> sens = sensorManager.getSensorList(Sensor.TYPE_ALL);
@@ -726,7 +739,7 @@ public class MainActivity extends AppCompatActivity {
                     button.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                         @Override
                         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                            if (!isChecked){
+                            if (isChecked){
                                 new Thread(new Runnable() {
                                     @Override
                                     public void run() {
@@ -803,6 +816,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void stopRecording() {
+        bluetoothScanner.stop();
+        wifiScanner.stop();
+        myAudioRecorder.stop();
         unregisterAllSensors();
         closeAllStreams();
         isRunning = false;
@@ -912,7 +928,23 @@ public class MainActivity extends AppCompatActivity {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+        startWifiDiscovery();
+        startBluetoothDiscovery();
+        startAudio();
+
         startCountDown();
+    }
+
+    private void startAudio() {
+        myAudioRecorder.start();
+    }
+
+    private void  startBluetoothDiscovery() {
+        bluetoothScanner.startDiscovery();
+    }
+    private void startWifiDiscovery() {
+        wifiScanner.startDiscovery();
     }
 
     private void updatePreferences() {
@@ -960,7 +992,10 @@ public class MainActivity extends AppCompatActivity {
         } else {
             sampleBar = Integer.parseInt(preferences.getString(getString(R.string.bar),"100"));
         }
-        remoteSwitch = preferences.getBoolean(getString(R.string.pref_title_remote_switch), true);
+        remoteSwitch = preferences.getBoolean(getString(R.string.pref_title_remote_switch), false);
+        myAudioRecorder.setEnabled(preferences.getBoolean(getString(R.string.pref_title_remote_switch_audio), false));
+        wifiScanner.setEnabled(preferences.getBoolean(getString(R.string.pref_title_remote_switch_wifi), false));
+        bluetoothScanner.setEnabled(preferences.getBoolean(getString(R.string.pref_title_remote_switch_ble), false));
     }
 
 

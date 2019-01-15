@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DataCollectorV2</string>
+    <string name="app_name">DataCollector</string>
     <string name="title_activity_settings">Settings</string>
 
     <!-- Strings related to Settings -->
@@ -83,5 +83,11 @@
     <string name="grav">Gravity</string>
     <string name="lux">Luminosity</string>
     <string name="bar">Barometer</string>
+    <string name="pref_description_remote_switch_wifi">Enables or disables WIFI recording</string>
+    <string name="pref_description_remote_switch_audio">Enables or disables Audio recording</string>
+    <string name="pref_description_remote_switch_ble">Enables or disables Bluetooth recording</string>
+    <string name="pref_title_remote_switch_wifi">Enable WIFI</string>
+    <string name="pref_title_remote_switch_audio">Enable Audio</string>
+    <string name="pref_title_remote_switch_ble">Enable Bluetooth</string>
 
 </resources>

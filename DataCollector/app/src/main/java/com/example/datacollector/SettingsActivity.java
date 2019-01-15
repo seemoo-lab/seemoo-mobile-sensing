@@ -209,8 +209,11 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             if (sampleRates == null){
                 sampleRates = savedInstanceState.getIntArray(MainActivity.SMAPLE_EXTRA);
             }
-            String[] sensors = {
+            String[] properties = {
                     getString(R.string.pref_title_remote_switch),
+                    getString(R.string.pref_title_remote_switch_audio),
+                    getString(R.string.pref_title_remote_switch_ble),
+                    getString(R.string.pref_title_remote_switch_wifi),
                     getString(R.string.accel),
                     getString(R.string.accelUnC),
                     getString(R.string.accelLin),
@@ -231,10 +234,10 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             // guidelines.
             PreferenceManager manager = getPreferenceManager();
             Preference pref;
-            for (String s : sensors){
+            for (String s : properties){
                 pref = findPreference(s);
-                if (i != 0) {
-                    bindPreferenceSummaryToValue(pref,String.valueOf(sampleRates[i-1]));
+                if (i >4 ) {
+                    bindPreferenceSummaryToValue(pref,String.valueOf(sampleRates[i-4]));
                 } else {
                     bindPreferenceSummaryToValue(pref,null);
                 }

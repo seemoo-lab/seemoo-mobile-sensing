@@ -8,8 +8,29 @@
         android:summary="@string/pref_description_remote_switch"
         android:title="@string/pref_title_remote_switch"
         android:key="@string/pref_title_remote_switch"
-        android:checked="true"
-        android:defaultValue="true" />
+        android:checked="false"
+        android:defaultValue="false" />
+    <SwitchPreference
+        android:contentDescription="@string/pref_description_remote_switch_audio"
+        android:summary="@string/pref_description_remote_switch_audio"
+        android:title="@string/pref_title_remote_switch_audio"
+        android:key="@string/pref_title_remote_switch_audio"
+        android:checked="false"
+        android:defaultValue="false" />
+    <SwitchPreference
+        android:contentDescription="@string/pref_description_remote_switch_ble"
+        android:summary="@string/pref_description_remote_switch_ble"
+        android:title="@string/pref_title_remote_switch_ble"
+        android:key="@string/pref_title_remote_switch_ble"
+        android:checked="false"
+        android:defaultValue="false" />
+    <SwitchPreference
+        android:contentDescription="@string/pref_description_remote_switch_wifi"
+        android:summary="@string/pref_description_remote_switch_wifi"
+        android:title="@string/pref_title_remote_switch_wifi"
+        android:key="@string/pref_title_remote_switch_wifi"
+        android:checked="false"
+        android:defaultValue="false" />
     <ListPreference
         android:entries="@array/values_hz_name"
         android:entryValues="@array/values_hz"
