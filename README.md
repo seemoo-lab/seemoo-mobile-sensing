@@ -32,7 +32,9 @@ To Run the App: (You need at least once internet connection so that the app can 
     - (Optional) Set the preferred sampling rates for the different sensors
 5. press the back button (Upper left corner) or the hardware back button
 6. you can now start or stop recording the via the Button in the middle of the screen.
-    
+
+
+Not Finished yet ...
 ### Run the Remote Controller App
 
 Data can be found on the internal storage under internalStorage/Sensordata/
