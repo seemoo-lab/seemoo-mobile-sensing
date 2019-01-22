@@ -33,7 +33,7 @@ Android version >= Android 5.0
 4. The *DataCollector* app supports *Crashlytics*, which can be included (https://fabric.io/kits/android/crashlytics/install) and can also be linked to Google's firebase.
 5. Build the project by pressing the corresponding button or using ```Build -> make Project```.
 
-### Run DataCollector App
+### Running DataCollector App
 
 Before running the app make sure that the phone has Internet connection (required for the NTF sync):
 
@@ -51,7 +51,7 @@ Before running the app make sure that the phone has Internet connection (require
 * Each time the *START/STOP* button is pressed a new folder with recorded sensor data is created. 
 * You can lock the screen on the phone while the data collection is running. However, on *Samsung Glaxy S6* the app **MUST NOT** be put in the background as the OS will eventually kill the app!
 
-### Run RemoteController App
+### Running RemoteController App
 
 To start *DataCollector* via *RemoteController* two Android phones are required (NOT RECOMMENDED, see above):
 
