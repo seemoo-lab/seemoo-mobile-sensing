@@ -29,7 +29,7 @@ Android version >= Android 5.0
 
 1. Download and install *Android Studio* (https://developer.android.com/studio/).
 2. Make sure to install the Android SDK with the minimum *SDK version 21*.
-3. Import the Project to Android Studio: ```File -> Open```, and then select the Android app you wish to install, i.e., *DataCollector* or *RemoteController*.
+3. Import the Project to *Android Studio*: ```File -> Open```, and then select the Android app you wish to install, i.e., *DataCollector* or *RemoteController*.
 4. The *DataCollector* app supports *Crashlytics*, which can be included (https://fabric.io/kits/android/crashlytics/install) and can also be linked to Google's firebase.
 5. Build the project by pressing the corresponding button or using ```Build -> make Project```.
 
