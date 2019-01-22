@@ -12,7 +12,7 @@ In our experimetns we used *Samsung Galaxy S6* phones with *Android 7.0* to coll
 | ------------- |:-------------:| -----:|:-----------------------:|
 | Galaxy S6  | Barometric pressure (hPa), luminosity (lux);  movement -> accelerometer (*m/s^2*), gyroscope (*deg/s*), magnetometer (*uT*) | 5 Hz / 50 Hz |        5 Hz for pressure and lux, 50 Hz for movement sensors            |
 | Galaxy S6  | Bluetooth low energy (BLE) and WiFi beacons      |   0.1 Hz |  Scan visible BLE and WiFi access points (APs) for 10 seconds     |
-| Galaxy S6  | Raw audio stream   |    16 kHz |     The audio is stored in **.WAV* file 
+| Galaxy S6  | Raw audio stream   |    16 kHz |     The audio is stored in a **.WAV* file 
 
 
 ## Requirements
