@@ -1,13 +1,27 @@
-# Data Collector App with RemoteController
-DataController app records sensors , audio, WIFI and Bluetooth. The recording can either be started via a simple button or a remote app which the target device needs to connect to. \
-**Note:** We do not recommend to use the remote app since there seems to be some problems with the recorded sensor data (it won't record consistently and will drop several minutes of recording) .
-    
-## Requirements
-    
-minSdkVersion 21 \
-targetSdkVersion 27 \
+# DataCollector App with RemoteController (Android)
 
-Your Android device needs to at least Support Android 5.0.
+This folder contains the source code of the Anroid apps used for data collection (audio, sensor data, WiFi and BLE beacons) in the paper "Perils of Zero-Interaction Security in the Internet of Things", by Mikhail Fomichev, Max Maass, Lars Almon, Alejandro Molina, Matthias Hollick, in Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, vol. 3, Issue 1, 2019.
+
+The *DataController* app contains the core data collection functionality. The data collection can either be started by pressing a button in *DataController* (RECOMMENDED) or via the remote app (*RemoteController*) to which a target sensing device needs to connect to.
+
+**Note:** While we provide the source code for the *RemoteController*, we do not recommend using it in combination with *DataController* to start it remotely (star the *DataController* by pressing a button)—with this setup we experienced some unexpected errors, jeopardizing reliable data collection. 
+
+In our experimetns we used *Samsung Galaxy S6* phones with *Android 7.0* to collect the following sensor modalities (The *DataController* app was also tested with *Nexus 5X* and *Nexus 6P* both with *Android 8.1.0*):
+
+| **Hardware**      | **Sensors**       | **Sampling rate**  | **Comments** |
+| ------------- |:-------------:| -----:|:-----------------------:|
+| Galaxy S6  | Barometric pressure (hPa), luminosity (lux);  movement -> accelerometer (*m/s^2*), gyroscope (*deg/s*), magnetometer (*uT*) | 5 Hz / 50 Hz |        5 Hz for pressure and lux, 50 Hz for movement sensors            |
+| Galaxy S6  | Bluetooth low energy (BLE) and WiFi beacons      |   0.1 Hz |  Scan visible BLE and WiFi access points (APs) for 10 seconds     |
+| Galaxy S6  | Raw audio stream   |    16 kHz |     The audio is stored in **.WAV* file 
+
+
+## Requirements
+
+```
+minSdkVersion 21 
+targetSdkVersion 27 
+Android version >= Android 5.0
+```
 
 ## Getting Started
 
