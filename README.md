@@ -48,7 +48,7 @@ Before running the app make sure that the phone has Internet connection (require
 5. The data collection is started/stopped by pressing the *START/STOP* button in the center of the screen. 
 
 **Notes:** 
-* Each time the *START/STOP* button is pressed a new folder with recorded sensor data is created. 
+* Each time the *START/STOP* button is pressed a new folder with recorded sensor data is created (non-destructive to previously collected data). 
 * You can lock the screen on the phone while the data collection is running. However, on *Samsung Glaxy S6* the app **MUST NOT** be put in the background as the OS will eventually kill the app!
 
 ### Running RemoteController App
