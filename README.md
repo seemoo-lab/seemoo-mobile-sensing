@@ -45,7 +45,7 @@ Before running the app make sure that the phone has Internet connection (require
 	- *BLE*, *WiFi* and *audio* collection is disabled.
 	- The option to launch the app via *RemoteController* is disabled.
     - (Optional) Here you can set the required sampling rates for different sensors.
-5. The app is started/stopped by pressing the *START/STOP* button in the center of the screen. 
+5. The data collection is started/stopped by pressing the *START/STOP* button in the center of the screen. 
 
 **Notes:** 
 * Each time the *START/STOP* button is pressed a new folder with recorded sensor data is created. 
