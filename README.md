@@ -38,7 +38,7 @@ Android version >= Android 5.0
 Before running the app make sure that the phone has Internet connection (required for the NTF sync):
 
 1. Make sure your phone has a debugging mode enabled and connect it to the computer.
-2. Start the app by pressing the corresponding button or hitting *Shift+F10* to select select your device, install the *DataCollector*. 
+2. Start the app by pressing the corresponding button or hitting *Shift+F10* to select your device, install the *DataCollector*. 
 3. Accept all permissions -> *Data read/write*, *Audio recording*, *Bluetooth*, *Locations* (required for performing WiFi scans).
 4. The app settings are entered by clicking 3-dot symbol in the upper right corner, the *Default Settings* are:
 	- All sensors are set to their *Max* sampling rates permitted by the phone.
