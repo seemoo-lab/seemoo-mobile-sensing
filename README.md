@@ -15,15 +15,15 @@ In our experimetns we used *Samsung Galaxy S6* phones with *Android 7.0* to coll
 | Galaxy S6  | Raw audio stream   |    16 kHz |     The audio is stored in a **.WAV* file 
 
 
-## Requirements
+## Getting Started
+
+### Requirements
 
 ```
 minSdkVersion 21 
 targetSdkVersion 27 
 Android version >= Android 5.0
 ```
-
-## Getting Started
 
 ### Setting up the Environment
 
