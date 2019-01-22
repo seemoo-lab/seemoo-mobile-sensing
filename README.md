@@ -63,7 +63,7 @@ To start *DataCollector* via *RemoteController* two Android phones are required 
 7. Make sure that both phones are in the same network.
 8. In the *DataCollector* app (first phone) press the *CONNECT* button and wait for both phones to establish a connection.
 9. If the connection is successful the first phone will pop up in the *RemoteController* (running on the second phone) and in the *DataCollector* (running on the first phone) the status will change to *CONNECTED*.
-10. In the *RemoteController* set up the time at which the *DataCollector* starts recording, as well as the duration of the data collection. 
+10. In the *RemoteController* set up the time at which the *DataCollector* should start recording, as well as the duration of the data collection. 
 11. After the start time and duration have been set, press the *START* button in the *RemoteController* to transimt these paramters to the *DataCollector*, which displays the received start time and data collection duration.
 12. The *DataCollector* will automatically start the data collection at the specified start time and stop it after the specified duration. 
 
