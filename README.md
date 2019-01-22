@@ -40,7 +40,7 @@ Before running the app make sure that the phone has Internet connection (require
 1. Make sure your phone has a debugging mode enabled and connect it to the computer.
 2. Start the app by pressing the corresponding button or hitting *Shift+F10* to select your device, install the *DataCollector*. 
 3. Accept all permissions -> *Data read/write*, *Audio recording*, *Bluetooth*, *Locations* (required for performing WiFi scans).
-4. The app settings are entered by clicking 3-dot symbol in the upper right corner, the *Default Settings* are:
+4. The app settings are entered by clicking a 3-dot symbol in the upper right corner, the *Default Settings* are:
 	- All sensors are set to their *Max* sampling rates permitted by the phone.
 	- *BLE*, *WiFi* and *audio* collection is disabled.
 	- The option to launch the app via *RemoteController* is disabled.
