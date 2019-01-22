@@ -89,3 +89,11 @@ Timestamp/              # Root folder of the sensor data, corresponds the start 
     + wifi.txt          # WiFi data
 ```
 
+## Authors
+
+Timm Lippert and Mikhail Fomichev
+
+
+## License
+
+The code is licensed under the GNU GPLv3. See LICENSE.txt for details.
