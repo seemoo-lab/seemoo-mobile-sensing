@@ -4,7 +4,7 @@ This folder contains the source code of the Anroid apps used for data collection
 
 The *DataController* app contains the core data collection functionality. The data collection can either be started by pressing a button in *DataController* (RECOMMENDED) or via the remote app (*RemoteController*) to which a target sensing device needs to connect to.
 
-**Note:** While we provide the source code for the *RemoteController*, we do not recommend using it in combination with *DataController* to start it remotely (star the *DataController* by pressing a button)—with this setup we experienced some unexpected errors, jeopardizing reliable data collection. 
+**Note:** While we provide the source code for the *RemoteController*, we do not recommend using it in combination with *DataController* to start it remotely (start the *DataController* by pressing a button)—with this setup we experienced some unexpected errors, jeopardizing reliable data collection. 
 
 In our experimetns we used *Samsung Galaxy S6* phones with *Android 7.0* to collect the following sensor modalities (The *DataController* app was also tested with *Nexus 5X* and *Nexus 6P* both with *Android 8.1.0*):
 
