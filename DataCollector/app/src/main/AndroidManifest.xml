@@ -34,14 +34,14 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="af98cc00845fa2eb94df4201b12f7149e6618042" />
+            android:value="" />
         <meta-data
             android:name="firebase_crashlytics_collection_enabled"
             android:value="false" />
 
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings">
+            android:label="@string/title_activity_settings"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
